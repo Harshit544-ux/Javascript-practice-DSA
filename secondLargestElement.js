@@ -13,10 +13,9 @@ for(let i=0;i<=arr.length;i++){
 console.log("largest number = ",largest)
 
 //second pass for finding the second largest number
-
 let second_largest=-1;
 
-for(let i=0;i<arr.length;i++){
+for(let i=0;i<=arr.length;i++){
     if(arr[i]>second_largest && arr[i]!=largest){
         second_largest=arr[i];
     }
