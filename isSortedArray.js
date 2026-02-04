@@ -9,8 +9,8 @@ function isSortedArray(arr)
     //loop through the array
     for (let i=1;i<=arr.length-1;i++){
         //check if the current element is greater than the previous element
-        if(arr[i]<=arr[i-1]){
-            continue;
+        if(arr[i]>=arr[i-1]){
+              continue;
         }
         else{
             //if the current element is not greater than the previous element, return false
@@ -24,7 +24,7 @@ function isSortedArray(arr)
 
 
 //initialize the array
-const arr=[1,2,8,3,3,4];
+const arr=[1,2,2,3,3,4];
 
 //call the function
 const result=isSortedArray(arr);
