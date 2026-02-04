@@ -2,9 +2,10 @@
 
 const arr=[3,5,7,8,6,1];
 
-let max=0;
+//take the temporary variable to store the maximum number
+let max=arr[0];
 
-//loop
+//loop through the array
 for(let i=0;i<arr.length;i++){
    //check the condition for maximum number
    if(max<arr[i]){
@@ -12,6 +13,7 @@ for(let i=0;i<arr.length;i++){
    }
 }
 
+//print the maximum number
 console.log("Maximum number is : " , max);
 
 

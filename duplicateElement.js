@@ -1,3 +1,5 @@
+//wap to find the duplicate elements in an array
+
 //create an array with some duplcate elments
 const arr = [1, 1,3, 2 , 2 , 4, 5, 6, 4];
 
