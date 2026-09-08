@@ -1,19 +1,23 @@
-//wap to find the duplicate elements in an array
+//remove duplicate in sorted array
 
-//create an array with some duplcate elments
-const arr = [1, 1,3, 2 , 2 , 4, 5, 6, 4];
+let arr = [1,2,2,3,4,4,5,5,5]
 
-//another array to store duplicate elements
-const duplicates = [];
+let temp =[]
+ let j=0;
 
-// loop through the array
-for(let i=0 ;i<arr.length;i++){
-    //check for duplicate elements
-    // 1 === 1
-    if(arr[i]===arr[i+1]){
-        duplicates.push(arr[i]);
-    }
+for (let i=0;i<arr.length-1;i++){
+    if(arr[i]!=arr[i+1]){
+
+       temp[j]=arr[i]
+        j++;
+
+}}
+
+temp [j] = arr[arr.length-1]
+
+console.log("remove duplicate in sorted array")
+
+for (let i=0;i<temp.length;i++){
+    console.log(temp[i])
 }
 
-//print the duplicate elements
-console.log("Duplicate elements in the array are : ", duplicates);

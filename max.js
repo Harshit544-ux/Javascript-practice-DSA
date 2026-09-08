@@ -1,20 +1,16 @@
-// wap to find the maximum number from an array 
+// find maximum number in an array
 
-const arr=[3,5,7,8,6,1];
+let array = [4,3,5,2,1,6]
 
-//take the temporary variable to store the maximum number
-let max=arr[0];
+let max = array[0];  // max = 4
 
-//loop through the array
-for(let i=0;i<arr.length;i++){
-   //check the condition for maximum number
-   if(max<arr[i]){
-    max=arr[i];
-   }
+
+for (let i=1;i<=5;i++){
+
+    if (array[i]>max){
+      max = array[i];
+    }
+
 }
 
-//print the maximum number
-console.log("Maximum number is : " , max);
-
-
-
+console.log("the maximum number is :" ,max) // after the loop stop i got the maximum number in the array
